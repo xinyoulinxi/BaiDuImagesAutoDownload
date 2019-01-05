@@ -4,8 +4,6 @@ import urllib
 from urllib.request import urlretrieve
 import re
 import threading
-# test
-
 
 def get_keyword_urllist(keyword):                #爬取当前关键词下的图片地址
 	keyword=urllib.parse.quote(keyword)
