@@ -4,6 +4,8 @@ import urllib
 from urllib.request import urlretrieve
 import re
 import threading
+# test
+
 
 def get_keyword_urllist(keyword):                #爬取当前关键词下的图片地址
 	keyword=urllib.parse.quote(keyword)
@@ -19,7 +21,7 @@ def get_keyword_urllist(keyword):                #爬取当前关键词下的图
 
 #以下两变量是可修改变量
 thread_word_index=int(5)               #每个线程被分配的任务量
-keyword="栗山未来"                      #关键词
+keyword="栗山"                      #关键词
 
 
 pic_list=get_keyword_urllist(keyword)  #获取所有图片的地址并存储在pic_list中
