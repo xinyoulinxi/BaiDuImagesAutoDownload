@@ -62,7 +62,7 @@ def _main():#主线程
 		if pic[len(pic)-1]=='g':
 			name = keyword+str(main_thread_begin+mthread_i)
 			download_pic(pic,'%s.jpg' %name)
-			print ("{0} get {1} html success".format(threading.current_thread().name ,x+i))
+			print ("{0} get {1} html success".format(threading.current_thread().name ,main_thread_begin+mthread_i))
 		mthread_i+=1
 
 _main()
