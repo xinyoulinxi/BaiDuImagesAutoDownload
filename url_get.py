@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import urllib.request
 def get_html(httpUrl):
 	page = urllib.request.urlopen( httpUrl )#打开网页
@@ -18,6 +17,7 @@ def get_html(httpUrl):
 	htmlCode = page.read( )#读取网页
 	return htmlCode
 
+'''
 '''
 def store_html_code(html_code,file_name):
 	f_html=open(file_name,'w',encoding='utf-8')
