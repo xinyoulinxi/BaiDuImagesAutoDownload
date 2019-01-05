@@ -38,7 +38,7 @@ def auto_download(x):                  #线程自动下载自己的任务
 		pic=pic_list[x+i]
 		if pic[len(pic)-1]=='g':
 			name = keyword+str(x+i)
-			download_pic(pic,'./images1/%s.jpg' %name)
+			download_pic(pic,'%s.jpg' %name)
 			#time.sleep(0.01)
 			print ("{0} get {1} html success".format(threading.current_thread().name ,x+i))
 		i+=1
@@ -61,7 +61,7 @@ def _main():#主线程
 		pic=pic_list[main_thread_begin+mthread_i]
 		if pic[len(pic)-1]=='g':
 			name = keyword+str(main_thread_begin+mthread_i)
-			download_pic(pic,'./images1/%s.jpg' %name)
+			download_pic(pic,'%s.jpg' %name)
 			print ("{0} get {1} html success".format(threading.current_thread().name ,x+i))
 		mthread_i+=1
 
