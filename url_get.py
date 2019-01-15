@@ -1,8 +1,11 @@
 import urllib.request
+
+
 def get_html(httpUrl):
-	page = urllib.request.urlopen( httpUrl )#打开网页
-	htmlCode = page.read( )#读取网页
-	return htmlCode
+    page = urllib.request.urlopen(httpUrl)  #打开网页
+    htmlCode = page.read()  #读取网页
+    return htmlCode
+
 
 '''
 def store_html_code(html_code,file_name):
