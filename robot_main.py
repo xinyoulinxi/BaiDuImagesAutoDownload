@@ -18,11 +18,10 @@ def get_keyword_urllist(keyword):  #爬取当前关键词下的图片地址
     return pic_list
 
 
-keyword = "栗山"  #关键词
 
-#以下两变量是可修改变量
 thread_word_index = int(5)  #每个线程被分配的任务量
-
+keyword = "栗山"  #关键词
+# 配置项读取
 try:
     f = open('setting.txt', 'r')
     keyword = f.read()
